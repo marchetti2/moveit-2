@@ -1,0 +1,7 @@
+.container {
+  height: 100vh;
+  flex: 1;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: 112px 1fr;
+}

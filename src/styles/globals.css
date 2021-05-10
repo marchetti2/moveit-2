@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-background: #5965e0;
+  --main-logo: #fff;
+  --main-input: linear-gradient(
+    to right,
+    rgba(73, 83, 184, 1),
+    rgba(73, 83, 184, 0.2)
+  );
+  --main-input-hover: #414aa3;
+  --white: #fff;
+  --background: #f2f3f5;
+  --gray-line: #dcdde0;
+  --text: #666666;
+  --text-highlight: #b3b9ff;
+  --title: #2e384d;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+  --blue-twitter: #2aa9e0;
+  --countdown-border: #f0f1f3;
+  --white-text: #fff;
+  --sidebar-background: linear-gradient
+    (rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  --challengesButton-red: #fff5f5;
+  --challengesButton-green: #f7fff5;
+  --challengesText-red: #e83f5b;
+  --challengesText-green: #4cd62b;
+  --logoff-button: #ccc;
+  --shareTwitterButton: #f5fcff;
+  --shareTwitterTextButton: #2aa9e0;
+}
+
+input[type="checkbox"]:checked ~ * {
+  --main-background: #121214;
+  --main-logo: #5965e0;
+  --main-input: linear-gradient(
+    to right,
+    rgba(50, 50, 54, 1),
+    rgba(50, 50, 54, 0.4)
+  );
+  --main-input-hover: #dcdde0e5;
+  --white: #202024;
+  --background: #121214;
+  --gray-line: #666;
+  --text: #bbb;
+  --text-highlight: #dcdde0e5;
+  --title: #ffffff;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+  --blue-twitter: #2aa9e0;
+  --countdown-border: #121214;
+  --white-text: #fff;
+  --sidebar-background: linear-gradient(
+    rgba(50, 50, 54, 1),
+    rgba(50, 50, 54, 0.4)
+  );
+  --challengesButton-red: #202024;
+  --challengesButton-green: #202024;
+  --challengesText-red: #e83f5b;
+  --challengesText-green: #4cd62b;
+  --logoff-button: #555;
+  --shareTwitterButton: #202024;
+  --shareTwitterTextButton: #2aa9e0;
+}
+
+input[type="checkbox"]:checked body {
+  --main-background: #121214;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  height: 100vh;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.circle {
+  position: relative;
+  border-radius: 100%;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: radial-gradient(
+    circle 150px at 25% 33%,
+    #ffe469,
+    #fa961b,
+    #fecc51,
+    #fcb033
+  );
+  box-shadow: 0px 0px 40px 3px white;
+  margin: auto;
+  transition: box-shadow 1.75s;
+}
+.crescent {
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+label {
+  position: fixed;
+  z-index: 1;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked + .app .crescent {
+  transform: scale(1);
+  transition-delay: 0.5s;
+}
+[type="checkbox"]:checked + .app .circle {
+  background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
+  box-shadow: none;
+  transition-delay: box-shadow 0.75s;
+}

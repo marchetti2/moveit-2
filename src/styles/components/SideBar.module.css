@@ -1,0 +1,35 @@
+.container {
+  height: 100vh;
+  width: 7rem;
+  background: var(--sidebar-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875rem 0;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+
+.container > div {
+  width: 100%;
+}
+
+.container > div > div {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.container > div > div {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.logoff {
+  color: var(--logoff-button);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.logoff:hover {
+  color: var(--blue);
+}

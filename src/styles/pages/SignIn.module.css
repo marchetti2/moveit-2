@@ -1,0 +1,133 @@
+.bodyContainer {
+  background: var(--main-background) url("/backgroundLight.png") no-repeat left
+    center;
+  height: 100vh;
+}
+
+input[type="checkbox"]:checked ~ * .bodyContainer {
+  background: var(--main-background) url("/backgroundDark.png") no-repeat left
+    center;
+}
+
+.container {
+  height: 100vh;
+  width: 50vw;
+  margin: 0 55px auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div > svg {
+  width: 22.5rem;
+  height: 4.75rem;
+  margin-bottom: 50px;
+}
+
+.container > div > svg path {
+  fill: var(--main-logo);
+}
+
+.container > div > svg path:nth-of-type(4) {
+  fill: #4cd62b;
+}
+
+.container > div > p {
+  color: var(--white-text);
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
+.container > div > p + div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.container > div > p + div > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 20px;
+}
+
+.container > div > p + div > svg > g > path {
+  fill: var(--text-highlight);
+}
+
+.container > div > p + div > p {
+  color: var(--text-highlight);
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.container > div > p + div + div > form {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > div > p + div + div > form > input {
+  width: 21.25rem;
+  height: 5rem;
+  color: var(--white-text);
+  font-size: 1.25rem;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+  background: var(--main-input);
+  padding: 0 15px;
+}
+
+.container > div > p + div + div > form > input:hover {
+  border: 1px solid var(--main-input-hover);
+}
+
+.container > div > p + div + div > form > input::placeholder {
+  color: var(--text-highlight);
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.container > div > p + div + div > form > button {
+  width: 5rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  color: var(--white-text);
+  background: var(--blue-dark);
+  font-size: 0;
+}
+
+.container > div > p + div + div > form > button:disabled {
+  width: 5rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  color: var(--white-text);
+  background: var(--blue-dark);
+  font-size: 0;
+  cursor: not-allowed;
+  transition: filter 0.2s;
+}
+
+.container > div > p + div + div > form > button:disabled:hover {
+  filter: brightness(0.9);
+}
+
+.container > div > p + div + div > form > button {
+  width: 5rem;
+  height: 5rem;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  color: var(--white-text);
+  background: rgba(76, 214, 43, 0.95);
+  font-size: 0;
+  transition: filter 0.2s;
+}
+
+.container > div > p + div + div > form > button:hover {
+  filter: brightness(0.9);
+}
