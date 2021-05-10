@@ -31,6 +31,10 @@ See the project [here](https://moveit-2-five.vercel.app).
       <li>The app
     <p align="center"><img src="https://media.giphy.com/media/1fWjshi63Rij7gYwyx/giphy.gif"></p>
   </li>
+   </li>
+      <li>thumbnail
+    <p align="center"><img src="https://i.ibb.co/SRksvTQ/thumb.png"></p>
+  </li>
 </ul>
  
 <h2 id="technologies">Technologies</h2>
@@ -52,6 +56,7 @@ See the project [here](https://moveit-2-five.vercel.app).
 - [x] Database
 - [x] Dark mode
 - [ ] css improvement
+- [ ] Responsive web design
 
 <h2 id="started">Getting started</h2>
 
